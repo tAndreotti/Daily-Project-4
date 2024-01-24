@@ -6,6 +6,7 @@ import Picture4 from "../../../public/images/4.jpg";
 import Picture5 from "../../../public/images/5.jpg";
 import Picture6 from "../../../public/images/6.jpg";
 import Picture7 from "../../../public/images/7.jpeg";
+import logo from "../../../public/images/logo.png";
 import Floating1 from "../../../public/images/floating_1.jpg";
 import Floating2 from "../../../public/images/floating_1.jpg";
 import Floating3 from "../../../public/images/floating_1.jpg";
@@ -17,7 +18,7 @@ import Floating8 from "../../../public/images/floating_1.jpg";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import gsap from "gsap";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
   floating1,
   floating2,
@@ -139,24 +140,42 @@ export default function Index() {
         className={styles.main}
       >
         <div ref={plane1} className={styles.plane}>
-          <Image src={floating1} alt="image" width={300} />
-          <Image src={floating2} alt="image" width={300} />
-          <Image src={floating7} alt="image" width={225} />
-        </div>
-        <div ref={plane2} className={styles.plane}>
-          <Image src={floating4} alt="image" width={250} />
-          <Image src={floating6} alt="image" width={200} />
-          <Image src={floating8} alt="image" width={225} />
-        </div>
-        <div ref={plane3} className={styles.plane}>
-          <Image src={floating3} alt="image" width={150} />
-          <Image src={floating5} alt="image" width={200} />
-        </div>
-        <div className={styles.title}>
-          <h1>Floating Images Gallery</h1>
-          <p>Next.js and GSAP</p>
+          <Magnetism>
+            <Image className={styles.imgPosition} src={logo} alt="image" width={72} />
+          </Magnetism>
         </div>
       </main>
     </div>
+  );
+}
+
+function Magnetism({ children }) {
+  const ref = useRef(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouse = (e) => {
+    const { clientX, clientY } = e;
+    const { height, width, left, top } = ref.current.getBoundingClientRect();
+    const middleX = clientX - (left + width / 2);
+    const middleY = clientY - (top + height / 2);
+    setPosition({ x: middleX, y: middleY });
+  };
+
+  const reset = () => {
+    setPosition({ x: 0, y: 0 });
+  };
+
+  const { x, y } = position;
+  return (
+    <motion.div
+      style={{ position: "relative" }}
+      ref={ref}
+      onMouseMove={handleMouse}
+      onMouseLeave={reset}
+      animate={{ x, y }}
+      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+    >
+      {children}
+    </motion.div>
   );
 }
