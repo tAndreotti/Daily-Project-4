@@ -19,7 +19,7 @@ export default function Index() {
 
   // resize images
   // const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
-  const scale4 = useTransform(scrollYProgress, [0, 1], [1, 50]);
+  const scale4 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
   const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
