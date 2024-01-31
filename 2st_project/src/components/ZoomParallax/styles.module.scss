@@ -1,5 +1,109 @@
+// .container {
+//     height: 300vh;
+//     position: relative;
+
+//     .sticky {
+//         position: sticky;
+//         overflow: hidden;
+//         top: 0;
+//         height: 100vh;
+
+//         .el {
+//             width: 100%;
+//             height: 100%;
+//             top: 0;
+//             position: absolute;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+
+//             .imageContainer {
+//                 position: relative;
+//                 width: 12vw;
+//                 height: 16vw;
+
+//                 img {
+//                     object-fit: cover;
+//                 }
+//             }
+
+//             &:nth-of-type(2) {
+//                 .imageContainer {
+//                     top: -36vh;
+//                     left: -15vw;
+//                     width: 24vw;
+//                     height: 18vw;
+//                 }
+//             }
+
+//             &:nth-of-type(3) {
+//                 .imageContainer {
+//                     top: -32vh;
+//                     left: 20vw;
+//                     width: 36vw;
+//                     height: 20vw;
+//                 }
+//             }
+
+//             &:nth-of-type(4) {
+//                 .imageContainer {
+//                     left: -36vw;
+//                     top: 18vh;
+//                     width: 24vw;
+//                     height: 30vw;
+//                 }
+//             }
+
+//             &:nth-of-type(5) {
+//                 .imageContainer {
+//                     top: 36vh;
+//                     left: 1vw;
+//                     width: 36vw;
+//                     height: 20vw;
+//                 }
+//             }
+
+//             &:nth-of-type(6) {
+//                 .imageContainer {
+//                     top: 24vh;
+//                     left: 34vw;
+//                     width: 18vw;
+//                     height: 25vw;
+//                 }
+//             }
+
+//             &:nth-of-type(7) {
+//                 .imageContainer {
+//                     top: calc(-50vh + 45.5px);
+//                     left: calc(-50vw + 86.5px);
+//                     width: 12vw;
+//                     height: 16vw;
+//                 }
+//             }
+//         }
+//     }
+
+//     .secondPic {
+//         position: absolute;
+//         overflow: hidden;
+//         bottom: -90vh;
+//         width: 99vw;
+//         height: 39vw;
+//         background-image: url('../../../public/images/secondHandPic.png');
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//     }
+
+//     .textPosition {
+//         position: absolute;
+//         bottom: -10vh;
+//         width: 70vw;
+//         color: white;
+//     }
+// }
+
 .container {
-    height: 300vh;
+    height: 600vh;
     position: relative;
 
     .sticky {
@@ -19,8 +123,10 @@
 
             .imageContainer {
                 position: relative;
-                width: 25vw;
-                height: 3.75vw;
+                top: -4vw;
+                right: -2vw;
+                width: 6vw;
+                height: 8vw;
 
                 img {
                     object-fit: cover;
@@ -29,56 +135,95 @@
 
             &:nth-of-type(2) {
                 .imageContainer {
-                    top: -30vh;
-                    left: 5vw;
-                    width: 35vw;
-                    height: 30vh;
+                    top: -18vh;
+                    left: -5vw;
+                    width: 24vw;
+                    height: 18vw;
                 }
             }
 
             &:nth-of-type(3) {
                 .imageContainer {
-                    top: -10vh;
-                    left: -25vw;
-                    width: 20vw;
-                    height: 45vh;
+                    top: -20vh;
+                    left: 20vw;
+                    width: 36vw;
+                    height: 20vw;
                 }
             }
 
             &:nth-of-type(4) {
                 .imageContainer {
-                    left: 27.5vw;
-                    width: 25vw;
-                    height: 25vh;
+                    left: -12vw;
+                    top: 18vh;
+                    width: 16vw;
+                    height: 20vw;
                 }
             }
 
             &:nth-of-type(5) {
                 .imageContainer {
-                    top: 27.5vh;
-                    left: 5vw;
+                    top: 30vh;
+                    left: 1vw;
                     width: 20vw;
-                    height: 25vh;
+                    height: 12vw;
                 }
             }
 
             &:nth-of-type(6) {
                 .imageContainer {
-                    top: 27.5vh;
-                    left: -22.5vw;
-                    width: 30vw;
-                    height: 25vh;
+                    top: 0vh;
+                    left: 8vw;
+                    width: 9vw;
+                    height: 12vw;
                 }
             }
 
             &:nth-of-type(7) {
                 .imageContainer {
-                    top: 25vh;
-                    left: 25vw;
-                    width: 15vw;
-                    height: 15vh;
+                    top: 12vh;
+                    left: 12vw;
+                    width: 12vw;
+                    height: 16vw;
                 }
             }
         }
+    }
+
+    .logo {
+        position: fixed;
+        top: 24px;
+        left: 24px;
+        width: 900px;
+        height: 125px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../../../public/images/HAROUNN.png');
+    }
+
+    .secondPic {
+        position: absolute;
+        overflow: hidden;
+        bottom: -90vh;
+        width: 99vw;
+        height: 39vw;
+        background-image: url('../../../public/images/secondHandPic.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .textPosition {
+        position: absolute;
+        bottom: -10vh;
+        width: 70vw;
+        color: white;
+    }
+
+    .textPositionTwo {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        width: 50vw;
+        text-align: right;
+        color: white;
     }
 }
