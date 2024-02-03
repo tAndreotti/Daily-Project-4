@@ -61,6 +61,11 @@ export default function Home() {
     }
   };
 
+  const [selectedLink, setSelectedLink] = useState({
+    isActive: false,
+    index: 0,
+  });
+
   return (
     <main
       onMouseMove={(e) => {
