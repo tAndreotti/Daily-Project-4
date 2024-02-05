@@ -109,14 +109,14 @@ export default function Home() {
           onMouseLeave={handleMouseLeave}
           src={floating4}
           alt="image"
-          width={250}
+          width={225}
         />
         <Image
           onMouseOver={handleMouseOver(5)}
           onMouseLeave={handleMouseLeave}
           src={floating6}
           alt="image"
-          width={200}
+          width={225}
         />
         <Image
           onMouseOver={handleMouseOver(6)}

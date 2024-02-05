@@ -35,12 +35,16 @@
       position: absolute;
       cursor: pointer;
       filter: blur(4px);
-      animation: 2s linear;
+      transition: all 1s ease;
     }
 
     img:hover {
       filter: blur(0);
-      animation: 2s linear;
+      margin-left: -37.5px;
+      margin-top: -50px;
+      width: 300px;
+      height: 425px;
+      transition: all .7s ease;
     }
 
     &:nth-of-type(1) {
@@ -66,6 +70,7 @@
 
     &:nth-of-type(2) {
       filter: brightness(0.6);
+      z-index: 999;
 
       img {
         &:nth-of-type(1) {
