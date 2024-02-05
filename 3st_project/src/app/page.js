@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.scss";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import {
   floating1,
@@ -13,6 +13,8 @@ import {
   floating7,
   floating8,
 } from "../data";
+import { motion } from "framer-motion";
+import { blur } from "./anim";
 
 export default function Home() {
   const plane1 = useRef(null);
@@ -61,6 +63,16 @@ export default function Home() {
     }
   };
 
+  const [selectedLink, setSelectedLink] = useState(0);
+
+  const handleMouseOver = (index) => () => {
+    setSelectedLink(index);
+  };
+
+  const handleMouseLeave = () => {
+    setSelectedLink(0);
+  };
+
   return (
     <main
       onMouseMove={(e) => {
@@ -69,18 +81,66 @@ export default function Home() {
       className={styles.main}
     >
       <div ref={plane1} className={styles.plane}>
+        {/* <motion.div
+          onMouseOver={handleMouseOver(1)}
+          onMouseLeave={handleMouseLeave}
+          variants={blur}
+          animate={selectedLink === 1 && true}
+        ></motion.div> */}
         <Image src={floating1} alt="image" width={300} />
-        <Image src={floating2} alt="image" width={300} />
-        <Image src={floating7} alt="image" width={225} />
+        <Image
+          onMouseOver={handleMouseOver(2)}
+          onMouseLeave={handleMouseLeave}
+          src={floating2}
+          alt="image"
+          width={300}
+        />
+        <Image
+          onMouseOver={handleMouseOver(3)}
+          onMouseLeave={handleMouseLeave}
+          src={floating7}
+          alt="image"
+          width={225}
+        />
       </div>
       <div ref={plane2} className={styles.plane}>
-        <Image src={floating4} alt="image" width={250} />
-        <Image src={floating6} alt="image" width={200} />
-        <Image src={floating8} alt="image" width={225} />
+        <Image
+          onMouseOver={handleMouseOver(4)}
+          onMouseLeave={handleMouseLeave}
+          src={floating4}
+          alt="image"
+          width={250}
+        />
+        <Image
+          onMouseOver={handleMouseOver(5)}
+          onMouseLeave={handleMouseLeave}
+          src={floating6}
+          alt="image"
+          width={200}
+        />
+        <Image
+          onMouseOver={handleMouseOver(6)}
+          onMouseLeave={handleMouseLeave}
+          src={floating8}
+          alt="image"
+          width={225}
+        />
       </div>
       <div ref={plane3} className={styles.plane}>
-        <Image src={floating3} alt="image" width={150} />
-        <Image src={floating5} alt="image" width={200} />
+        <Image
+          onMouseOver={handleMouseOver(7)}
+          onMouseLeave={handleMouseLeave}
+          src={floating3}
+          alt="image"
+          width={150}
+        />
+        <Image
+          onMouseOver={handleMouseOver(8)}
+          onMouseLeave={handleMouseLeave}
+          src={floating5}
+          alt="image"
+          width={200}
+        />
       </div>
       <div className={styles.title}>
         <h1>Floating Images Gallery</h1>

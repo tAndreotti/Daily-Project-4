@@ -33,6 +33,14 @@
 
     img {
       position: absolute;
+      cursor: pointer;
+      filter: blur(4px);
+      animation: 2s linear;
+    }
+
+    img:hover {
+      filter: blur(0);
+      animation: 2s linear;
     }
 
     &:nth-of-type(1) {
