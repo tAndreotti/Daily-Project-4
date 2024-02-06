@@ -81,49 +81,43 @@ export default function Home() {
       className={styles.main}
     >
       <div ref={plane1} className={styles.plane}>
-        {/* <motion.div
-          onMouseOver={handleMouseOver(1)}
-          onMouseLeave={handleMouseLeave}
-          variants={blur}
-          animate={selectedLink === 1 && true}
-        ></motion.div> */}
         <Image src={floating1} alt="image" width={300} />
         <Image
           onMouseOver={handleMouseOver(2)}
           onMouseLeave={handleMouseLeave}
-          src={floating2}
+          src={floating5}
           alt="image"
-          width={300}
+          width={350}
         />
         <Image
           onMouseOver={handleMouseOver(3)}
           onMouseLeave={handleMouseLeave}
-          src={floating7}
+          src={floating2}
           alt="image"
-          width={225}
+          width={360}
         />
       </div>
       <div ref={plane2} className={styles.plane}>
         <Image
           onMouseOver={handleMouseOver(4)}
           onMouseLeave={handleMouseLeave}
-          src={floating4}
+          src={floating1}
           alt="image"
-          width={225}
+          width={260}
         />
         <Image
           onMouseOver={handleMouseOver(5)}
           onMouseLeave={handleMouseLeave}
-          src={floating6}
+          src={floating4}
           alt="image"
-          width={225}
+          width={280}
         />
         <Image
           onMouseOver={handleMouseOver(6)}
           onMouseLeave={handleMouseLeave}
-          src={floating8}
+          src={floating7}
           alt="image"
-          width={225}
+          width={275}
         />
       </div>
       <div ref={plane3} className={styles.plane}>
@@ -132,14 +126,14 @@ export default function Home() {
           onMouseLeave={handleMouseLeave}
           src={floating3}
           alt="image"
-          width={150}
+          width={250}
         />
         <Image
           onMouseOver={handleMouseOver(8)}
           onMouseLeave={handleMouseLeave}
-          src={floating5}
+          src={floating6}
           alt="image"
-          width={200}
+          width={300}
         />
       </div>
       <div className={styles.title}>
