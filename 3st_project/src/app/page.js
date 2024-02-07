@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import gsap from "gsap";
 import {
+  center,
+  diminua,
   floating1,
   floating2,
   floating3,
@@ -12,6 +14,7 @@ import {
   floating6,
   floating7,
   floating8,
+  foque,
 } from "../data";
 import { motion } from "framer-motion";
 import { blur } from "./anim";
@@ -81,7 +84,7 @@ export default function Home() {
       className={styles.main}
     >
       <div ref={plane1} className={styles.plane}>
-        <Image src={floating1} alt="image" width={300} />
+        <Image src={floating8} alt="image" width={360} />
         <Image
           onMouseOver={handleMouseOver(2)}
           onMouseLeave={handleMouseLeave}
@@ -117,7 +120,7 @@ export default function Home() {
           onMouseLeave={handleMouseLeave}
           src={floating7}
           alt="image"
-          width={275}
+          width={300}
         />
       </div>
       <div ref={plane3} className={styles.plane}>
@@ -137,9 +140,16 @@ export default function Home() {
         />
       </div>
       <div className={styles.title}>
-        <h1>Floating Images Gallery</h1>
-        <p>Next.js and GSAP</p>
+        <Image src={center} alt="image" width={100} />
+        <Image src={diminua} alt="image" width={100} />
+        <Image src={foque} alt="image" width={300} />
       </div>
+      <div className={styles.topLeft1}></div>
+      <div className={styles.topLeft2}></div>
+      <div className={styles.topLeft3}></div>
+      <div className={styles.topLeft4}></div>
+      <div className={styles.topLeft5}></div>
+      <div className={styles.topLeft6}></div>
     </main>
   );
 }

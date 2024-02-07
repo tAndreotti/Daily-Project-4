@@ -7,23 +7,13 @@
   .title {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 18px;
-
-    h1 {
-      font-weight: 400;
-      color: white;
-      margin: 0px;
-      text-align: center;
-    }
-
-    p {
-      color: grey;
-      margin: 0px;
-      text-align: center;
-      margin-top: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
   }
 
   .plane {
@@ -33,6 +23,7 @@
 
     img {
       position: absolute;
+      height: auto;
       cursor: pointer;
       filter: blur(4px);
       transition: all 1s ease;
@@ -40,18 +31,19 @@
 
     img:hover {
       filter: blur(0);
-      width: 300px;
+      width: 320px;
       height: auto;
       transition: all .7s ease;
     }
 
     &:nth-of-type(1) {
       filter: brightness(0.7);
+      z-index: 998;
 
       img {
         &:nth-of-type(1) {
-          left: 90%;
-          top: 70%;
+          left: 85%;
+          top: 54%;
         }
 
         &:nth-of-type(2) {
@@ -83,13 +75,14 @@
 
         &:nth-of-type(3) {
           left: 60%;
-          top: 60%;
+          top: 70%;
         }
       }
     }
 
     &:nth-of-type(3) {
       filter: brightness(0.5);
+      z-index: 997;
 
       img {
         &:nth-of-type(1) {
@@ -104,4 +97,58 @@
       }
     }
   }
+}
+
+.topLeft1 {
+  position: absolute;
+  width: 50vw;
+  height: 20vh;
+  background-color: black;
+  z-index: 1;
+}
+
+.topLeft2 {
+  position: absolute;
+  width: 16vw;
+  height: 55vh;
+  background-color: black;
+  z-index: 1;
+}
+
+.topLeft3 {
+  position: absolute;
+  width: 30vw;
+  height: 32vh;
+  background-color: black;
+  z-index: 1;
+}
+
+.topLeft4 {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 50vw;
+  height: 20vh;
+  background-color: black;
+  z-index: 1;
+}
+
+.topLeft5 {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 16vw;
+  height: 55vh;
+  background-color: black;
+  z-index: 1;
+}
+
+.topLeft6 {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 30vw;
+  height: 32vh;
+  background-color: black;
+  z-index: 1;
 }
