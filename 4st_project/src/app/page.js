@@ -15,12 +15,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.body}>
-        <div className={styles.introLine}>
-          <p>T</p>
-          <p>Andreotti</p>
-        </div>
+        {/* <div className={styles.introLine}> */}
+          <TextDipserse>
+            {/* <p>T</p> */}
+            <p>Andreotti</p>
+          </TextDipserse>
+        {/* </div> */}
 
-        <div className={styles.introLine}>
+        {/* <div className={styles.introLine}>
           <p>Designer</p>
           <p>&</p>
         </div>
@@ -28,7 +30,7 @@ export default function Home() {
         <div className={styles.introLine}>
           <p>Frontend</p>
           <p>Dev</p>
-        </div>
+        </div> */}
 
         <TextDipserse setBackground={setBackground}>
           <p>+19996071518</p>
