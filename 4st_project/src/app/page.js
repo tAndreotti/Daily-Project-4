@@ -15,14 +15,16 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.body}>
-        {/* <div className={styles.introLine}> */}
-          <TextDipserse>
-            {/* <p>T</p> */}
-            <p>Andreotti</p>
-          </TextDipserse>
-        {/* </div> */}
+        <TextDipserse setBackground={setBackground}>
+          <p>ULTRAJANTE</p>
+        </TextDipserse>
 
         {/* <div className={styles.introLine}>
+          <p>T</p>
+          <p>Andreotti</p>
+        </div>
+
+        <div className={styles.introLine}>
           <p>Designer</p>
           <p>&</p>
         </div>
