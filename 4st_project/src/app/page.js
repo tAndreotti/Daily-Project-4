@@ -19,9 +19,11 @@ export default function Home() {
           <p>ULTRAJANTE</p>
         </TextDipserse>
 
-        {/* <div className={styles.introLine}>
+        <div className={styles.introLine}>
           <p>T</p>
-          <p>Andreotti</p>
+          <TextDipserse>
+            <p>Andreotti</p>
+          </TextDipserse>
         </div>
 
         <div className={styles.introLine}>
@@ -32,7 +34,7 @@ export default function Home() {
         <div className={styles.introLine}>
           <p>Frontend</p>
           <p>Dev</p>
-        </div> */}
+        </div>
 
         <TextDipserse setBackground={setBackground}>
           <p>+19996071518</p>
