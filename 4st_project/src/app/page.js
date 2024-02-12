@@ -21,9 +21,7 @@ export default function Home() {
 
         <div className={styles.introLine}>
           <p>T</p>
-          <TextDipserse>
-            <p>Andreotti</p>
-          </TextDipserse>
+          <p>Andreotti</p>
         </div>
 
         <div className={styles.introLine}>
