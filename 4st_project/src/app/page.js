@@ -15,11 +15,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.body}>
-        <TextDipserse setBackground={setBackground}>
+        {/* <TextDipserse setBackground={setBackground}>
           <p>ULTRAJANTE</p>
+        </TextDipserse> */}
+
+        <TextDipserse setBackground={setBackground}>
+          <p>ULTRAJANTE teste de texto grandioso</p>
         </TextDipserse>
 
-        <div className={styles.introLine}>
+        {/* <div className={styles.introLine}>
           <p>T</p>
           <p>Andreotti</p>
         </div>
@@ -32,7 +36,7 @@ export default function Home() {
         <div className={styles.introLine}>
           <p>Frontend</p>
           <p>Dev</p>
-        </div>
+        </div> */}
 
         <TextDipserse setBackground={setBackground}>
           <p>+19996071518</p>
