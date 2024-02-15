@@ -20,7 +20,11 @@ export default function Home() {
         </TextDipserse> */}
 
         <TextDipserse setBackground={setBackground}>
-          <p>ULTRAJANTE teste de texto grandioso</p>
+          <p>ULTRAJANTE123</p>
+        </TextDipserse>
+
+        <TextDipserse setBackground={setBackground}>
+          <p>ULTRAJANTE</p>
         </TextDipserse>
 
         {/* <div className={styles.introLine}>
