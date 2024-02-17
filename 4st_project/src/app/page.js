@@ -20,7 +20,7 @@ export default function Home() {
         </TextDipserse> */}
 
         <TextDipserse setBackground={setBackground}>
-          <p>ULTRAJANTE123</p>
+          <p>LIMITE13CARAC</p>
         </TextDipserse>
 
         <TextDipserse setBackground={setBackground}>
