@@ -105,6 +105,7 @@
   height: 20vh;
   background-color: black;
   z-index: 1;
+  animation: eye2 5s ease-in-out 0.2s;
 }
 
 .topLeft2 {
@@ -113,6 +114,7 @@
   height: 55vh;
   background-color: black;
   z-index: 1;
+  animation: eye1 5s ease-in-out 0.2s;
 }
 
 .topLeft3 {
@@ -121,6 +123,7 @@
   height: 32vh;
   background-color: black;
   z-index: 1;
+  animation: eye8 5s ease-in-out 0.2s;
 }
 
 .topLeft4 {
@@ -131,6 +134,7 @@
   height: 20vh;
   background-color: black;
   z-index: 1;
+  animation: eye2 5s ease-in-out 0.2s;
 }
 
 .topLeft5 {
@@ -141,6 +145,7 @@
   height: 55vh;
   background-color: black;
   z-index: 1;
+  animation: eye1 5s ease-in-out 0.2s;
 }
 
 .topLeft6 {
@@ -151,4 +156,167 @@
   height: 32vh;
   background-color: black;
   z-index: 1;
+  animation: eye8 5s ease-in-out 0.2s;
+}
+
+.topLeft7 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: black;
+  z-index: 1;
+  animation: eye7 5s ease-in-out 0.2s;
+}
+
+.topLeft8 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: black;
+  z-index: 1;
+  animation: eye7 5s ease-in-out 0.2s;
+}
+
+@keyframes eye1 {
+  0% {
+    z-index: 999;
+    width: 16vw;
+    height: 100vh;
+  }
+
+  55% {
+    z-index: 999;
+    width: 16vw;
+    height: 100vh;
+  }
+
+  80% {
+    z-index: 999;
+    width: 16vw;
+    height: 0;
+  }
+
+  100% {
+    z-index: 1;
+    width: 16vw;
+    height: 55vh;
+  }
+}
+
+@keyframes eye2 {
+  0% {
+    z-index: 999;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  15% {
+    z-index: 999;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  45% {
+    z-index: 999;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  67% {
+    z-index: 999;
+    width: 100vw;
+    height: 0;
+  }
+
+  80% {
+    z-index: 1;
+    width: 50vw;
+    height: 0;
+  }
+
+  100% {
+    z-index: 1;
+    width: 50vw;
+    height: 20vh;
+  }
+}
+
+@keyframes eye7 {
+  0% {
+    z-index: 999;
+    width: 30vw;
+    height: 50vh;
+  }
+
+  15% {
+    z-index: 999;
+    width: 30vw;
+    height: 45vh;
+  }
+
+  45% {
+    z-index: 999;
+    width: 30vw;
+    height: 50vh;
+  }
+
+  75% {
+    z-index: 999;
+    width: 30vw;
+    height: 0;
+  }
+
+  80% {
+    z-index: 1;
+    width: 30vw;
+    height: 0;
+  }
+
+  100% {
+    z-index: 1;
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes eye8 {
+  0% {
+    z-index: 999;
+    width: 30vw;
+    height: 50vh;
+  }
+
+  15% {
+    z-index: 999;
+    width: 30vw;
+    height: 45vh;
+  }
+
+  45% {
+    z-index: 999;
+    width: 30vw;
+    height: 50vh;
+  }
+
+  75% {
+    z-index: 999;
+    width: 30vw;
+    height: 0;
+  }
+
+  80% {
+    z-index: 1;
+    width: 30vw;
+    height: 0;
+  }
+
+  100% {
+    z-index: 1;
+    width: 30vw;
+    height: 32vh;
+  }
 }

@@ -16,9 +16,6 @@ import {
   floating8,
   foque,
 } from "../data";
-import { motion } from "framer-motion";
-import { blur } from "./anim";
-import Layout from "@/components";
 
 export default function Home() {
   const plane1 = useRef(null);
@@ -78,81 +75,81 @@ export default function Home() {
   };
 
   return (
-    <Layout backgroundColor={"#B0AD98"}>
-      <main
-        onMouseMove={(e) => {
-          manageMouseMove(e);
-        }}
-        className={styles.main}
-      >
-        <div ref={plane1} className={styles.plane}>
-          <Image src={floating8} alt="image" width={360} />
-          <Image
-            onMouseOver={handleMouseOver(2)}
-            onMouseLeave={handleMouseLeave}
-            src={floating5}
-            alt="image"
-            width={350}
-          />
-          <Image
-            onMouseOver={handleMouseOver(3)}
-            onMouseLeave={handleMouseLeave}
-            src={floating2}
-            alt="image"
-            width={360}
-          />
-        </div>
-        <div ref={plane2} className={styles.plane}>
-          <Image
-            onMouseOver={handleMouseOver(4)}
-            onMouseLeave={handleMouseLeave}
-            src={floating1}
-            alt="image"
-            width={260}
-          />
-          <Image
-            onMouseOver={handleMouseOver(5)}
-            onMouseLeave={handleMouseLeave}
-            src={floating4}
-            alt="image"
-            width={280}
-          />
-          <Image
-            onMouseOver={handleMouseOver(6)}
-            onMouseLeave={handleMouseLeave}
-            src={floating7}
-            alt="image"
-            width={300}
-          />
-        </div>
-        <div ref={plane3} className={styles.plane}>
-          <Image
-            onMouseOver={handleMouseOver(7)}
-            onMouseLeave={handleMouseLeave}
-            src={floating3}
-            alt="image"
-            width={250}
-          />
-          <Image
-            onMouseOver={handleMouseOver(8)}
-            onMouseLeave={handleMouseLeave}
-            src={floating6}
-            alt="image"
-            width={300}
-          />
-        </div>
-        <div className={styles.title}>
-          <Image src={center} alt="image" width={100} />
-          <Image src={diminua} alt="image" width={100} />
-          <Image src={foque} alt="image" width={300} />
-        </div>
-        <div className={styles.topLeft1}></div>
-        <div className={styles.topLeft2}></div>
-        <div className={styles.topLeft3}></div>
-        <div className={styles.topLeft4}></div>
-        <div className={styles.topLeft5}></div>
-        <div className={styles.topLeft6}></div>
-      </main>
-    </Layout>
+    <main
+      onMouseMove={(e) => {
+        manageMouseMove(e);
+      }}
+      className={styles.main}
+    >
+      <div ref={plane1} className={styles.plane}>
+        <Image src={floating8} alt="image" width={360} />
+        <Image
+          onMouseOver={handleMouseOver(2)}
+          onMouseLeave={handleMouseLeave}
+          src={floating5}
+          alt="image"
+          width={350}
+        />
+        <Image
+          onMouseOver={handleMouseOver(3)}
+          onMouseLeave={handleMouseLeave}
+          src={floating2}
+          alt="image"
+          width={360}
+        />
+      </div>
+      <div ref={plane2} className={styles.plane}>
+        <Image
+          onMouseOver={handleMouseOver(4)}
+          onMouseLeave={handleMouseLeave}
+          src={floating1}
+          alt="image"
+          width={260}
+        />
+        <Image
+          onMouseOver={handleMouseOver(5)}
+          onMouseLeave={handleMouseLeave}
+          src={floating4}
+          alt="image"
+          width={280}
+        />
+        <Image
+          onMouseOver={handleMouseOver(6)}
+          onMouseLeave={handleMouseLeave}
+          src={floating7}
+          alt="image"
+          width={300}
+        />
+      </div>
+      <div ref={plane3} className={styles.plane}>
+        <Image
+          onMouseOver={handleMouseOver(7)}
+          onMouseLeave={handleMouseLeave}
+          src={floating3}
+          alt="image"
+          width={250}
+        />
+        <Image
+          onMouseOver={handleMouseOver(8)}
+          onMouseLeave={handleMouseLeave}
+          src={floating6}
+          alt="image"
+          width={300}
+        />
+      </div>
+      <div className={styles.title}>
+        <Image src={center} alt="image" width={100} />
+        <Image src={diminua} alt="image" width={100} />
+        <Image src={foque} alt="image" width={300} />
+      </div>
+      <div className={styles.topLeft1}></div>
+      <div className={styles.topLeft2}></div>
+      <div className={styles.topLeft3}></div>
+      <div className={styles.topLeft4}></div>
+      <div className={styles.topLeft5}></div>
+      <div className={styles.topLeft6}></div>
+      <div className={styles.topLeft7}></div>
+      <div className={styles.topLeft8}></div>
+    </main>
   );
 }
