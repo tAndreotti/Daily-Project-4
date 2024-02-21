@@ -87,14 +87,14 @@ export default function Home() {
           onMouseOver={handleMouseOver(2)}
           onMouseLeave={handleMouseLeave}
           src={floating5}
-          alt="image"
+          alt="image 1"
           width={350}
         />
         <Image
           onMouseOver={handleMouseOver(3)}
           onMouseLeave={handleMouseLeave}
           src={floating2}
-          alt="image"
+          alt="image 2"
           width={360}
         />
       </div>
@@ -103,21 +103,21 @@ export default function Home() {
           onMouseOver={handleMouseOver(4)}
           onMouseLeave={handleMouseLeave}
           src={floating1}
-          alt="image"
+          alt="image 3"
           width={260}
         />
         <Image
           onMouseOver={handleMouseOver(5)}
           onMouseLeave={handleMouseLeave}
           src={floating4}
-          alt="image"
+          alt="image 4"
           width={280}
         />
         <Image
           onMouseOver={handleMouseOver(6)}
           onMouseLeave={handleMouseLeave}
           src={floating7}
-          alt="image"
+          alt="image 5"
           width={300}
         />
       </div>
@@ -126,14 +126,14 @@ export default function Home() {
           onMouseOver={handleMouseOver(7)}
           onMouseLeave={handleMouseLeave}
           src={floating3}
-          alt="image"
+          alt="image 6"
           width={250}
         />
         <Image
           onMouseOver={handleMouseOver(8)}
           onMouseLeave={handleMouseLeave}
           src={floating6}
-          alt="image"
+          alt="image 7"
           width={300}
         />
       </div>
