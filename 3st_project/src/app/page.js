@@ -138,9 +138,9 @@ export default function Home() {
         />
       </div>
       <div className={styles.title}>
-        <Image src={center} alt="image" width={100} />
-        <Image src={diminua} alt="image" width={100} />
-        <Image src={foque} alt="image" width={300} />
+        <Image src={center} alt="logo" width={100} />
+        <Image src={diminua} alt="texto-dinimua" width={100} />
+        <Image src={foque} alt="texto-foque" width={300} />
       </div>
       <div className={styles.topLeft1}></div>
       <div className={styles.topLeft2}></div>
