@@ -142,14 +142,14 @@ export default function Home() {
         <Image src={diminua} alt="texto-dinimua" width={100} />
         <Image src={foque} alt="texto-foque" width={300} />
       </div>
-      <div className={styles.topLeft1}></div>
-      <div className={styles.topLeft2}></div>
-      <div className={styles.topLeft3}></div>
-      <div className={styles.topLeft4}></div>
-      <div className={styles.topLeft5}></div>
-      <div className={styles.topLeft6}></div>
-      <div className={styles.topLeft7}></div>
-      <div className={styles.topLeft8}></div>
+      <div alt="background" className={styles.topLeft1}></div>
+      <div alt="background" className={styles.topLeft2}></div>
+      <div alt="background" className={styles.topLeft3}></div>
+      <div alt="background" className={styles.topLeft4}></div>
+      <div alt="background" className={styles.topLeft5}></div>
+      <div alt="background" className={styles.topLeft6}></div>
+      <div alt="background" className={styles.topLeft7}></div>
+      <div alt="background" className={styles.topLeft8}></div>
     </main>
   );
 }
