@@ -82,7 +82,7 @@ export default function Home() {
       className={styles.main}
     >
       <div ref={plane1} className={styles.plane}>
-        <Image src={floating8} alt="image" width={360} />
+        <Image src={floating8} alt="image 0" width={360} />
         <Image
           onMouseOver={handleMouseOver(2)}
           onMouseLeave={handleMouseLeave}
