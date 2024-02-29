@@ -76,6 +76,7 @@ export default function Home() {
 
   return (
     <main
+      alt="images"
       onMouseMove={(e) => {
         manageMouseMove(e);
       }}
